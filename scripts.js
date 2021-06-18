@@ -6,7 +6,7 @@ function createGrid(size) {
       const div = document.createElement("div");
       div.classList.add('grid');
       container.appendChild(div);
-      container.setAttribute('style', `grid-template-columns: 1fr repeat(${size}, 1fr);`)
+      container.setAttribute('style', `grid-template-columns: 1fr repeat(${size - 1}, 1fr);`)
     }
   }
 }

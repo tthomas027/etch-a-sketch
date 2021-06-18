@@ -3,13 +3,25 @@
   display: grid;
   width: 960px;
   height: 960px;
+  margin: auto;
 }
 
 .grid {
   width: auto;
   height: auto;
+  border-radius: 1px;
+  border: 1px solid rgb(211,211,211);
 }
 
 .black {
   background-color: rgb(0, 0, 0);
+}
+
+body, html {
+  height: 100%;
+  display: grid;
+}
+
+button {
+  margin: auto;
 }

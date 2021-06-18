@@ -27,7 +27,10 @@ clear.addEventListener('click', () => {
   while (container.hasChildNodes()) {
     container.removeChild(container.lastChild);
   }
-  let size =parseInt(prompt('How many squares per side?'));
+  let size;
+  do {
+    size = parseInt(prompt("Enter a size between 1 and 100",));
+  } while(isNaN(size) || size > 100 || size < 1);
   createGrid(size);
   addHover();
 })
